@@ -2,18 +2,18 @@ require( 'minitest/autorun' )
 require( 'minitest/rg' )
 require_relative( '../ruby_functions_practice' )
 
-class FunctionsTest < MiniTest::Test
+class Functionstest < MiniTest::Test
 
   def test_return_10()
     return_10_result = return_10()
     assert_equal( 10, return_10_result )
   end
 
-  # def test_add()
-  #   add_result = add( 1, 2 )
-  #   assert_equal( 3, add_result )
-  # end
-  #
+  def test_add()
+    add_result = add( 1, 2 )
+    assert_equal( 3, add_result )
+  end
+
   # def test_subtract()
   #   subtract_result = subtract( 10, 5 )
   #   assert_equal( 5, subtract_result )

@@ -95,12 +95,12 @@ end
 
 def volume_of_sphere(radius)
   radius_cubed = radius * radius * radius
-  answer = (4/3.to_f) * 3.14 * radius_cubed
-  return answer.to_i
+  answer = (4/3.to_f) * Math::PI * radius_cubed
+  return answer.round(1)
 end
 
 def fahrenheit_to_celsius(fahrenheit)
-    fahrenheit_minus32 = fahrenheit - 32
-    celsius = fahrenheit_minus32 * 0.5556
-    return celsius.to_i
+    fahrenheit_minus32 = (fahrenheit - 32)
+    celsius = (fahrenheit_minus32 * 0.5556)
+    return celsius.round(2)
 end
